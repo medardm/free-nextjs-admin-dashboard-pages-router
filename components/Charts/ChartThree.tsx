@@ -1,4 +1,4 @@
-"use client";
+
 import { ApexOptions } from "apexcharts";
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
@@ -51,7 +51,7 @@ const options: ApexOptions = {
 };
 
 const ChartThree: React.FC = () => {
-  const [state, setState] = useState<ChartThreeState>({
+  const [state/*, setState*/] = useState<ChartThreeState>({
     series: [65, 34, 12, 56],
   });
 

@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import ChartOne from "../Charts/ChartOne";
 import ChartThree from "../Charts/ChartThree";

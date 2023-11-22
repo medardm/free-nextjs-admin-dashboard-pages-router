@@ -155,13 +155,13 @@
 
 .datatable-sorter::before {
 	border-top: 4px solid #000;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .datatable-sorter::after {
 	border-bottom: 4px solid #000;
 	border-top: 4px solid transparent;
-	top: 0px;
+	top: 0;
 }
 
 .datatable-ascending .datatable-sorter::after,
