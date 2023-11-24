@@ -1,9 +1,10 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import TableOne from "@/components/Tables/TableOne";
-import TableThree from "@/components/Tables/TableThree";
 import TableTwo from "@/components/Tables/TableTwo";
-
+import TableThree from "@/components/Tables/TableThree";
+import TableFour from "@/components/Tables/TableFour";
 import {Metadata} from "next";
+import useFlowbite from "@/hooks/useFlowbite";
 
 export const metadata: Metadata = {
   title: "Tables Page | Next.js E-commerce Dashboard Template",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 const TablesPage = () => {
+  useFlowbite();
   return (
     <>
       <Breadcrumb pageName="Tables" />
@@ -20,6 +22,7 @@ const TablesPage = () => {
         <TableOne />
         <TableTwo />
         <TableThree />
+        <TableFour />
       </div>
     </>
   );

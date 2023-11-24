@@ -3,14 +3,12 @@ import "./data-tables-css.css";
 import "./satoshi.css";
 import {useEffect, useState} from "react";
 import Loader from "@/components/common/Loader";
-
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import {AppProps} from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -18,8 +16,6 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    // <html lang="en">
-    // <body suppressHydrationWarning={true}>
     <div className="dark:bg-boxdark-2 dark:text-bodydark">
       {loading ? (
         <Loader />
@@ -53,7 +49,5 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
       )}
     </div>
-    // </body>
-    // </html>
   );
 }
